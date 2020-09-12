@@ -10,6 +10,10 @@ html,body{
 .overlayer {
     background-color: rgba(255, 255, 255, 0.6);
 }
+.mainheading{
+    font-family: nunito;
+}
+
 .header-transparent{
     background-color: rgba(52, 58, 64, 0);
 }
@@ -22,7 +26,20 @@ hr{
     filter: blur(5px);
     --webkit-filter: blur(5px);
 }
-
+.card img{
+    filter: none;
+}
+.hovercarousel{
+    color: black;
+}
+.direction{
+    font-size: 50px;
+    font-weight: bold;
+}
+.hovercarousel:hover{
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.3);
+}
 .jumbotron h1{
     font-weight: 600;
 }
@@ -40,9 +57,101 @@ hr{
 .headerpara{
     font-size: 18px;
 }
+.stretcher{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.countnum{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+#counter p{
+    /* color: orange; */
+    display: inline-block;
+    height: 20vh;
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  #ending{
+    color: white;
+    background-color: rgba(0, 150, 0, 1);
+}
+#ending h1{
+    color: white;
+    font-weight: 500;
+}
+#ending h3{
+    font-size: 19px;
+    font-weight: 500;
+}
+#ending p{
+    font-size: 15px;
+    font-weight: 400;
+}
+#credits p{
+    font-size: 15px;
+    color: white; 
+}
+#credits i{
+     font-size: 30px;
+}
+#credits p a{
+      color: white;
+      font-weight: 600;
+} 
+.mapxx{
+        height: 100%;
+        width: 100%;
+        transition: box-shadow .3s;
+}
+.mapxx iframe{
+        height: 100%;
+        width: 100%;
+}
+ 
+@media screen and (max-width: 1000px) {
+    .mapxx iframe{
+        height: 300px;
+    }
+ #credits p{
+        font-size: 12px;
+    }
+    #credits i{
+        font-size: 23px;
+     }
+    .sidenav a {
+        font-size: 35px;
+    }
+}
 @media screen and (max-width: 800px) {
     .exclusive_set{
         border-radius: 0px;
         overflow: hidden;
     }
+    .stretcher{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        text-align: center;
+    }
+    .countnum{
+        font-size: 38px;
+    }
+    #counter p{
+        font-size: 19px;
+    }
+.mapxx iframe{
+        margin-left: 20px;
+        height: 250px;
+    }    
+#credits p{
+        font-size: 10px;
+    }    
+    #credits i{
+        font-size: 20px;
+    }
+    
 }
